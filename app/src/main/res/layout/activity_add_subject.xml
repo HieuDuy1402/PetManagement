@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/job562_nunoon_04_e"
+    tools:context=".ActivityAddSubject">
+
+    <TextView
+        android:id="@+id/tvAddLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Thêm Phân Loại"
+        android:textAllCaps="true"
+        android:textColor="@color/dng"
+        android:background="@color/dd"
+        android:padding="5dp"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:id="@+id/lnlEdtLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/tvAddLoai"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_marginBottom="5dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/add_image"
+                android:id="@+id/ivAddImgSubject"
+                android:layout_width="128dp"
+                android:layout_height="128dp">
+
+            </ImageView>
+            <Button
+                android:id="@+id/btnULImg"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textColor="@color/dng"
+                android:background="@color/dd"
+                android:text="Tải ảnh lên"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/edittextMaPhanLoai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Mã phân loại"/>
+        <EditText
+            android:id="@+id/edittextPhanLoai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Phân loại"/>
+        <EditText
+            android:id="@+id/edittextNgayThem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Ngày thêm"/>
+        <EditText
+            android:id="@+id/edittextGhiChu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Ghi chú"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnlEdtLoai"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/buttonAddSubject"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@color/dd"
+            android:text="Thêm"
+            android:textColor="@color/dng"
+            android:textSize="18dp" />
+        <Button
+            android:id="@+id/btnTroLai"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@color/dd"
+            android:text="Trở Lại"
+            android:textColor="@color/dng"
+            android:textSize="18dp" />
+    </LinearLayout>
+</LinearLayout>

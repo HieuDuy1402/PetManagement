@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/job562_nunoon_04_e"
+    tools:context=".ActivityAddSubject">
+
+    <TextView
+        android:id="@+id/tvAddLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="Thêm Hóa Đơn"
+        android:textAllCaps="true"
+        android:textColor="@color/dng"
+        android:background="@color/dd"
+        android:padding="5dp"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:id="@+id/lnlEdtLoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/tvAddLoai"
+        android:padding="10dp">
+        <EditText
+            android:id="@+id/edtBillID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Mã hóa đơn"/>
+        <EditText
+            android:id="@+id/edtBillKind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Loại hóa đơn"/>
+        <EditText
+            android:id="@+id/edtAddPerson"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Người thêm"/>
+        <EditText
+            android:id="@+id/edtDateAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Ngày thêm"/>
+        <EditText
+            android:id="@+id/edtBillTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Tổng tiền"/>
+        <EditText
+            android:id="@+id/edtNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Ghi chú"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnlEdtLoai"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/btnAddBill"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@color/dd"
+            android:text="Thêm"
+            android:textColor="@color/dng"
+            android:textSize="18dp" />
+        <Button
+            android:id="@+id/btnTroLai"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:background="@color/dd"
+            android:text="Trở Lại"
+            android:textColor="@color/dng"
+            android:textSize="18dp" />
+    </LinearLayout>
+</LinearLayout>
