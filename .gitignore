@@ -1,0 +1,81 @@
+# Android Studio / IntelliJ IDEA
+.idea/
+*.iml
+.gradle/
+local.properties
+/.idea/caches/
+/.idea/libraries/
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+
+# Android build files
+/build/
+/captures/
+/.externalNativeBuild/
+/.cxx/
+
+# macOS
+.DS_Store
+
+# Miscellaneous
+*.log
+*.tmp
+*.swp
+
+# Android Studio specific
+gradle-app.setting
+*.gradle
+*.gradle.kts
+
+# Generated files
+*.apk
+*.ap_
+*.dex
+*.class
+*.so
+*.dSYM/
+*.java~
+
+# Firebase related
+google-services.json
+google-services.properties
+
+# Keystore files
+*.jks
+*.keystore
+
+# Proguard
+proguard/
+
+# Lint and packaging
+lint/intermediates/
+lint/generated/
+lint/profiles/
+lint/lint.jar
+app/build/intermediates/
+app/build/generated/
+
+# Unit test / code coverage reports
+*.exec
+*.out
+*.coverage
+*.ec
+*/test-results/
+
+# Backup files
+*.swp
+*.swo
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Files that might appear in the root of a volume
+.Spotlight-V100
+.Trashes
+
+# Android Studio .env files
+*.env
+*.env.*
